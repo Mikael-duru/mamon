@@ -9,4 +9,4 @@ This is a solution to a DevCareer Cohort 3 task.
   - Mobile-first workflow
 
 ## Solution Site
-Live site: [https://devcareer-task-crypto-website.netlify.app/](https://devcareer-task-crypto-website.netlify.app/);
+Live site: [https://mikael-mamon-website.netlify.app/](https://mikael-mamon-website.netlify.app/);
