@@ -1,0 +1,16 @@
+body {
+  background: var(--body-bg);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --black-text: #000000;
+    --dark-text: #202020;
+    --mid-dark-text: #4F4F4F;
+    --light-text: #B2B2B2;
+    --button-bg:  #5528FF;
+    --overline: #C2C2C2;
+    --body-bg: #FFFFFF;
+    --footer-bg: #F7F7F7;
+  }
+}

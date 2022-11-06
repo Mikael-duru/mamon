@@ -1,0 +1,31 @@
+.footer {
+  background-color: var(--footer-bg);
+
+  &__wrapper {
+    @include wrapper;
+  }
+
+  &__flex {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    @media screen and (min-width: 768px) {
+      gap: 2.5rem;
+    }
+  }
+
+  &__social-logo:hover {
+    transform: translateY(-10px);
+    transition: all .5s ease;
+  }
+}

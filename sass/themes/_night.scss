@@ -1,0 +1,14 @@
+.dark-theme {
+  @include dark-mode;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --black-text: #FFFFFF;
+    --dark-text: #FFFFFF;
+    --mid-dark-text: #FFFFFF;
+    --light-text: #FFFFFF;
+    --body-bg: #21232A;
+    --footer-bg: #373B49;
+  }
+}

@@ -1,0 +1,56 @@
+@mixin dark-mode {
+  --black-text: #FFFFFF;
+  --dark-text: #FFFFFF;
+  --mid-dark-text: #FFFFFF;
+  --light-text: #FFFFFF;
+  --body-bg: #21232A;
+  --footer-bg: #373B49;
+}
+
+
+@mixin wrapper {
+  width: 100%;
+  padding-left: .97rem;
+  padding-right: .97rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 320px) {
+    max-width: 320px;
+  }
+
+  @media screen and (min-width: 375px) {
+    max-width: 375px;
+  }
+
+  @media screen and (min-width: 425px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-left: 1.2rem;
+    padding-right: 1rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    max-width: 1024px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+    padding-left: 8.5rem;
+    padding-right: 7.448rem;
+  }
+}
+
+@mixin flex($direction, $justify, $width) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: $justify;
+  width: $width;
+  gap: 37px;
+}

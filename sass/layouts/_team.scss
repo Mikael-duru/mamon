@@ -1,0 +1,64 @@
+.team {
+
+  &__overline {
+    @extend .services__overline;
+  }
+
+  &__overline-rule {
+    @extend .services__overline-rule;
+  }
+
+  &__overline-rule--active {
+    @extend .services__overline-rule--active;
+  }
+
+  &__overline-text {
+    @extend .services__overline-text;
+  }
+
+  &__wrapper {
+    @include wrapper;
+  }
+
+  &__grid {
+    padding-top: 5rem;
+    padding-bottom: 6.25rem;
+    display: grid;
+    gap: 60px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 6.31rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__grid-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+  }
+
+  &__profile-pic {
+    border-radius: 50%;
+    height: 100px;
+    object-fit: cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 32px;
+    color: var(--dark-text);
+    padding-bottom: 0.68rem;
+  }
+
+  &__desc {
+    @extend .services__desc;
+  }
+}

@@ -1,0 +1,46 @@
+.clients {
+
+  &__overline {
+    @extend .services__overline;
+  }
+
+  &__overline-rule {
+    @extend .services__overline-rule;
+  }
+
+  &__overline-rule--active {
+    @extend .services__overline-rule--active;
+  }
+
+  &__overline-text {
+    @extend .services__overline-text;
+  }
+
+  &__wrapper {
+    @include wrapper;
+  }
+
+  &__grid {
+    padding-top: 5rem;
+    padding-bottom: 6.55rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    gap: 3.38rem;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 3.37rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (min-width: 1024px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__grid-items:hover {
+    transform: scale(1.1);
+    transition: all .3s linear;
+  }
+  
+}
